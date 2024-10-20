@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Customer Churn Analysis</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Equation Format -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/offer-1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/offer-2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/offer-3.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/offer-4.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End  -->
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar dashboard navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0 my-3">
+                <h2 class="text-white"><i class="fas fa-layer-group me-3 text-white"></i>Customer Churn Analysis
+                    Dashboard</h2>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            </button>
+    </div>
+    </nav>
+
+    <!-- Carousel Start -->
+    <div class="header-carousel owl-carousel bg-white py-0 my-0">
+        <div class="header-carousel-item bg-white py-0 my-0">
+            <!-- <img src="img/carousel-1-fix.jpg" class="img-fluid w-100" alt="Image"> -->
+            <div class="carousel-caption py-0 my-0" style="background-color: #00D084;">
+                <div class="container">
+                    <div class="row ">
+                       
+                        <div class="col-xl-12 mx-0 px-0 animated fadeInLeft">
+                            
+                        <div class="card-group mx-2 px-2">
+                            <div class="card col-3 mx-2 px-2 ">
+                                <div class="rounded-circle bg-white  px-auto mx-auto" style="width: 150px; height: 150px;margin-top: -25%; border: 5px solid #00D084;">ffff</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to additional
+                                        content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                            <div class="card col-3 mx-2 px-2 ">
+                                                                <div class="rounded-circle bg-white  px-auto mx-auto"
+                                                                    style="width: 150px; height: 150px;margin-top: -25%; border: 5px solid #00D084;">ffff</div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to additional
+                                        content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                            <div class="card col-3 mx-2 px-2 ">
+                                                                <div class="rounded-circle bg-white  px-auto mx-auto"
+                                                                    style="width: 150px; height: 150px;margin-top: -25%; border: 5px solid #00D084;">ffff</div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text text-dark">This card has supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                            </div>
+                            <div class="card col-3 mx-2 px-2 ">
+                                                                <div class="rounded-circle bg-white  px-auto mx-auto"
+                                                                    style="width: 150px; height: 150px;margin-top: -25%; border: 5px solid #00D084;">ffff</div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to additional
+                                        content. This card has even longer content than the first to show that equal height action.</p>
+                                </div>
+                            </div>
+                       
+                     
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <!-- Carousel End -->
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+
+    <!-- Services Start -->
+    <div class="container-fluid service pb-5 pt-5" id="background">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp background" data-wow-delay="0.2s"
+                style="max-width: 800px;">
+                <!-- <h4 class="text-primary">Our Services</h4> -->
+                <h4 class="text-primary">Visualization</h4>
+                <h1 class="display-5 mb-4">Descriptive</h1>
+                <p class="mb-0"><b>Customers</b> are one of the key indicators any companies should pay attention to.
+                    <b>Churn</b> refers to the phenomenon in which customers stop using a company's products or
+                    services. Churn can be a major problem for companies, leading to increased new customer acquisition
+                    costs (CAC) and reduced customer loyalty, ultimately jeopardizing overall business success.</p>
+                <br>
+                <p><b>Churn rate</b> is a key metric that allows companies to measure the percentage of customers lost
+                    over a specific period. Churn rate can be calculated by using the following formula</p>
+                <p>
+                    $$ \text{Churn Rate} = \frac{\text{Number of Customers Lost during Period}}{\text{Total Number of
+                    Customers at the Start of Period}} \times 100 $$
+                </p>
+                <br>
+                <p> The ideal churn rate for mature and established companies is 5% to 7% in annual churn and less than
+                    1% in monthly churn (according to article in forbes.com). However, <b> measuring churn solely
+                        through churn rate can lead to misleading conclusions </b> about company's overall customer
+                    retention challenges.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/problem-1.jpg" class="img-fluid rounded-top w-100 " alt="Image">
+                        </div>
+                        <div class="rounded-bottom p-4">
+                            <a href="#" class="h4 d-inline-block mb-4"> Late Response</a>
+                            <p class="mb-4">Churn rates can only be measured after the period ends so they can only
+                                react to churn after it happens, missing the opportunity to intervene early and retain
+                                at-risk customers.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/problem-2.jpg" class="img-fluid rounded-top w-70 " alt="Image">
+                        </div>
+                        <div class="rounded-bottom p-4">
+                            <a href="#" class="h4 d-inline-block mb-4">Lack of Customer Insight</a>
+                            <p class="mb-4">Customer churn can be caused by various things. A simple churn rate formula
+                                only provides a single overall number, which does not give insight into why customers
+                                are leaving or which specific customers are most likely to churn.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/problem-3.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                        </div>
+                        <div class="rounded-bottom p-4">
+                            <a href="#" class="h4 d-inline-block mb-4">Limited Predictive Capabilities</a>
+                            <p class="mb-4">Traditional methods (churn rate formula) can not identify those who are
+                                likely to churn in the future. Thus, companies can not forecast the upcoming churn
+                                trends, which limits their ability to adjust strategies proactively.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-4.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Supply Optimization</a>
+                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-5.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Hr Consulting</a>
+                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-6.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Marketing Consulting</a>
+                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+   
+    <!-- Team Start -->
+    <div class="container-fluid team pb-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Project Group</h4>
+                <h1 class="display-5 mb-4">Meet Our Team</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team-giani.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">Giani Jovita Jane</h4>
+                            <p class="mb-0">Team Leader</p>
+                        </div>
+                        <div class="team-icon">
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3"
+                                href="mailto:gianijovita14@gmail.com?subject=Mail from our Website - Customer Churn Analysis Dashboard"><i
+                                    class="fas fa-envelope"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team-fathirmaula.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">Fathir Maula. S</h4>
+                            <p class="mb-0">Member</p>
+                        </div>
+                        <div class="team-icon">
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3"
+                                href="mailto:fathirmaula89@gmail.com?subject=Mail from our Website - Customer Churn Analysis Dashboard"><i
+                                    class="fas fa-envelope"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3"
+                                href="https://www.linkedin.com/in/fathir-maula-s"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team-nandya.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">Nandya Rezky Utami</h4>
+                            <p class="mb-0">Member</p>
+                        </div>
+                        <div class="team-icon">
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3"
+                                href="mailto:rezkynandaa42@gmail.com?subject=Mail from our Website - Customer Churn Analysis Dashboard"><i
+                                    class="fas fa-envelope"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team-agungbhaskara.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">Agung Bhaskara</h4>
+                            <p class="mb-0">Member</p>
+                        </div>
+                        <div class="team-icon">
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3"
+                                href="mailto:agungbhaskara35@gmail.com?subject=Mail from our Website - Customer Churn Analysis Dashboard"><i
+                                    class="fas fa-envelope"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3"
+                                href="https://www.linkedin.com/in/agungbhaskaraa/"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5 border-start-0 border-end-0"
+            style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0">
+                            <h4 class="text-white"><i class="fas fa-layer-group me-3"></i>Customer Churn Analysis</h4>
+                            <!-- <img src="img/logo.png" alt="Logo"> -->
+                        </a>
+                        <p class="mb-4">A project to deliver comprehensive understanding of customer in any companies
+                            who decide to discontinue using their services/products.</p>
+                        <div class="d-flex">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Support</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
+                        </div>
+                    </div> -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">Jakarta, Indonesia</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <p class="text-white mb-0">gianijovita14@gmail.com</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-phone-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">(+62)</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fab fa-firefox-browser text-primary me-3"></i>
+                            <p class="text-white mb-0">dashboard-churn.vercel.app</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Customer Churn Analysis Dashboard - Apa
+                            Yak? Team</a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

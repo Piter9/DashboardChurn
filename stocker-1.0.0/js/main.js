@@ -24,7 +24,14 @@
         }
     });
 
-
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+            $('.dashboard').addClass('sticky-top bg-success');
+            $('.dashboard').removeClass('shadow-sm');
+        } else {
+            $('.dashboard').removeClass('sticky-top shadow-sm bg-green');
+        }
+    });
     // Hero Header carousel
     $(".header-carousel").owlCarousel({
         animateOut: 'fadeOut',
