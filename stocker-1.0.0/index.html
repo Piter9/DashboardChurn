@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Stocker - Stock Market Website Template</title>
+        <title>Customer Churn Analysis</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -28,6 +28,11 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <!-- Equation Format -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     </head>
 
     <body>
@@ -46,13 +51,13 @@
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h2 class="text-primary"><i class="fas fa-question me-3 text-white"></i>Apa Yak?</h2>
+                    <h2 class="text-primary"><i class="fas fa-layer-group me-3 text-green"></i>Customer Churn Analysis Dashboard</h2>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">Background</a>
@@ -69,7 +74,7 @@
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">About Us</a>
-                    </div>
+                    </div> -->
                    
                 </div>
             </nav>
@@ -84,13 +89,13 @@
                                 <div class="col-lg-0 col-xl-5"></div>
                                 <div class="col-xl-7 animated fadeInLeft">
                                     <div class="text-sm-center text-md-end">
-                                        <h4 class="text-primary text-uppercase fw-bold mb-4">Starcore Data Analysis Competition 2024</h4>
-                                        <h1 class="display-4 text-uppercase text-white mb-4">Customer churn analysis</h1>
-                                        <p class="mb-5 fs-5"> By : Tim Apa Yak?
+                                        <!-- <h4 class="text-primary text-uppercase fw-bold mb-4">Starcore Data Analysis Competition 2024</h4> -->
+                                        <h1 class="display-4 text-uppercase text-white mb-4">Customer Churn Analysis</h1>
+                                        <p class="mb-5 fs-5"> Comprehensive understanding of customers who decide to discontinue using company's services. Provides actionable insights to help companies identify at-risk customers and improve retention strategies with data-driven precision.
                                         </p>
                                         <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
-                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i>Dashboard</a>
-                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Full Report</a>
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-brain me-2"></i>Start Explore</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#"><i class="fas fa-play-circle me-2"></i>Link to Video</a>
                                         </div>
                                        
                                     </div>
@@ -107,13 +112,13 @@
                                 <div class="col-12 animated fadeInUp">
                                     <div class="text-center">
                                         <h4 class="text-primary text-uppercase fw-bold mb-4">Starcore Data Analysis Competition 2024</h4>
-                                        <h1 class="display-4 text-uppercase text-white mb-4">Customer churn analysis</h1>
-                                        <p class="mb-5 fs-5">A comprehensive understanding of customer’s characteristics who stop using a company's services
-                                        <br>Case Study: Telecommunication Business </p>
+                                        <h1 class="display-4 text-uppercase text-white mb-4">Customer Churn Analysis</h1>
+                                        <!-- <p class="mb-5 fs-5">Comprehensive understanding of customers who decide to discontinue using company's services. -->
+                                        <br>Case Study: Telecommunication Company </p>
                                         
                                         <div class="d-flex justify-content-center flex-shrink-0 mb-4">
-                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Dashboard</a>
-                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Full Report</a>
+                                            <!-- <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-brain me-2"></i> Start Explore</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#"><i class="fas fa-play-circle me-2"></i>Link to Video</a> -->
                                         </div>
                                        
                                     </div>
@@ -195,14 +200,18 @@
         <!-- Services Start -->
         <div class="container-fluid service pb-5 pt-5">
             <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <div class="text-center mx-auto pb-5 wow fadeInUp background" data-wow-delay="0.2s" style="max-width: 800px;">
                     <!-- <h4 class="text-primary">Our Services</h4> -->
+                    <h4 class="text-primary">Introduction</h4>
                     <h1 class="display-5 mb-4">Background</h1>
-                    <p class="mb-0">Customers who stop using a service / customers who are not return to using a company's products.
+                    <p class="mb-0"><b>Customers</b> are one of the key indicators any companies should pay attention to. <b>Churn</b> refers to the phenomenon in which customers stop using a company's products or services. Churn can be a major problem for companies, leading to increased new customer acquisition costs (CAC) and reduced customer loyalty, ultimately jeopardizing overall business success.</p>
+                    <br>
+                    <p><b>Churn rate</b> is a key metric that allows companies to measure the percentage of customers lost over a specific period. Churn rate can be calculated by using the following formula</p>
+                    <p>
+                        $$ \text{Churn Rate} = \frac{\text{Number of Customers Lost during Period}}{\text{Total Number of Customers at the Start of Period}} \times 100 $$
                     </p>
                     <br>
-                    <p> "The ideal churn rate for mature and established companies is 5% to 7% in annual churn and less than 1% in monthly churn."</p>
-                    <p class="text-primary h5">forbes.com</p>
+                    <p> The ideal churn rate for mature and established companies is 5% to 7% in annual churn and less than 1% in monthly churn (according to article in forbes.com). However, <b> measuring churn solely through churn rate can lead to misleading conclusions </b> about company's overall customer retention challenges.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
@@ -212,8 +221,7 @@
                             </div>
                             <div class="rounded-bottom p-4">
                                 <a href="#" class="h4 d-inline-block mb-4"> Late Response</a>
-                                <p class="mb-4">If a company just rely on churn rate calculation formula, they can only react to churn after it happens, missing opportunities to intervene early and retain at-risk customers.
-                                </p>
+                                <p class="mb-4">Churn rates can only be measured after the period ends so they can only react to churn after it happens, missing the opportunity to intervene early and retain at-risk customers.</p>
                                 <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                             </div>
                         </div>
@@ -225,8 +233,7 @@
                             </div>
                             <div class="rounded-bottom p-4">
                                 <a href="#" class="h4 d-inline-block mb-4">Lack of Customer Insight</a>
-                                <p class="mb-4">Customer churn can be caused by various things. A simple churn rate formula only provides a single overall number, which doesn’t give insight into why customers are leaving or which specific customers are most likely to churn.
-                                </p>
+                                <p class="mb-4">Customer churn can be caused by various things. A simple churn rate formula only provides a single overall number, which does not give insight into why customers are leaving or which specific customers are most likely to churn.</p>
                                 <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                             </div>
                         </div>
@@ -238,7 +245,7 @@
                             </div>
                             <div class="rounded-bottom p-4">
                                 <a href="#" class="h4 d-inline-block mb-4">Limited Predictive Capabilities</a>
-                                <p class="mb-4">Traditional methods can not identify those who are likely to churn in the future. Thus, businesses can’t forecast upcoming churn trends, which limits their ability to adjust strategies proactively.
+                                <p class="mb-4">Traditional methods (churn rate formula) can not identify those who are likely to churn in the future. Thus, companies can not forecast the upcoming churn trends, which limits their ability to adjust strategies proactively.
                                 </p>
                                 <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                             </div>
@@ -288,12 +295,44 @@
         </div>
         <!-- Services End -->
 
+        <!-- Methodology Start -->
+        <div class="container-fluid faq-section pb-5">
+            <div class="container pb-5 overflow-hidden">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Methodology</h4>
+                    <h1 class="display-5 mb-4">What We Do?</h1>
+                  
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                       <div class="mb-5">
+                        <p class="h5">Customer Profiling</p>
+                        <p>A cluster-based analysis by categorizing customers into certain groups based on the characteristics of each customer.</p>
+                       </div>
+                       <br>
+                       <div>
+                        <p class="h5">Customer Prediction</p>
+                        <p>A machine learn modeling to predict whether customer is most likely to churn or not churn based on their characteristics, such as customer identification, service used, charges, etc</p>
+
+                       </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-primary rounded">
+                            <img src="img/method.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Methodology -->
+
+
         <!-- Features Start -->
         <div class="container-fluid feature pb-5">
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Features</h4>
-                    <h1 class="display-5 mb-4">Dataset</h1>
+                    <h4 class="text-primary">Sources</h4>
+                    <h1 class="display-5 mb-4">Dataset Used</h1>
                     <p class="mb-0">Source: <br>https://www.kaggle.com/datasets/alfathterry/telco-customer-churn-11-1-3 <br>https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113
                     </p>
                 </div>
@@ -347,61 +386,28 @@
         </div>
         <!-- Features End -->
 
-        <!-- Methodology Start -->
-        <div class="container-fluid faq-section pb-5">
-            <div class="container pb-5 overflow-hidden">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Methodology</h4>
-                    <h1 class="display-5 mb-4">Methodology</h1>
-                  
-                </div>
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
-                       <div class="mb-5">
-                        <p class="h5">Customer Profiling</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse nulla rem earum aut reiciendis itaque eum! Doloribus odio ipsum id numquam adipisci, suscipit provident fuga, velit consequatur beatae officiis!</p>
-                       </div>
-                       <br>
-                       <div>
-                        <p class="h5">Customer Prediction</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse nulla rem earum aut reiciendis itaque eum! Doloribus odio ipsum id numquam adipisci, suscipit provident fuga, velit consequatur beatae officiis!</p>
-
-                       </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
-                        <div class="bg-primary rounded">
-                            <img src="img/method.png" class="img-fluid w-100" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Methodology -->
-
-       
+               
         <!-- Offer Start -->
         <div class="container-fluid offer-section pb-5">
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Offer</h4>
-                    <h1 class="display-5 mb-4">Innovation Excellence</h1>
-                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
+                    <h4 class="text-primary">Results</h4>
+                    <h1 class="display-5 mb-4">Churn Analysis Result</h1>
                 </div>
                 <div class="row g-5 align-items-center">
                     <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="nav nav-pills bg-light rounded p-5">
                             <a class="accordion-link p-4 active mb-4" data-bs-toggle="pill" href="#collapseOne">
-                                <h5 class="mb-0">Lending money for investment of your new projects</h5>
+                                <h5 class="mb-0">Cluster of Customers</h5>
                             </a>
                             <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
-                                <h5 class="mb-0">Lending money for investment of your new projects</h5>
+                                <h5 class="mb-0">Word Cloud of Churn Reasons by Clusters</h5>
                             </a>
                             <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
-                                <h5 class="mb-0">Mobile payment is more flexible and easy for all investors</h5>
+                                <h5 class="mb-0">Churn Modeling</h5>
                             </a>
                             <a class="accordion-link p-4 mb-0" data-bs-toggle="pill" href="#collapseFour">
-                                <h5 class="mb-0">all transaction is kept free for the member of pro traders</h5>
+                                <h5 class="mb-0">Prediction of Churn Probability</h5>
                             </a>
                         </div>
                     </div>
@@ -472,7 +478,7 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
                         <div>
-                            <h4 class="text-primary">Product</h4>
+                            <h4 class="text-primary">Output</h4>
                             <h1 class="display-5 mb-7">See and Explore Our Analysis</h1>
                            
                             <div class="row g-4 mt-5">
@@ -480,7 +486,7 @@
                                     <div class="d-flex">
                                         <div><i class="fas fa-lightbulb fa-3x text-primary"></i></div>
                                         <div class="ms-4">
-                                            <h4>Dashboard</h4>
+                                            <h4>Data Dashboard</h4>
                                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                         </div>
                                     </div>
@@ -495,13 +501,13 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <a href="#" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Discover Now</a>
+                                    <a href="#" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Link to Data Dashboard --> </a>
                                    
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="d-flex">
                                        
-                                        <a href="#" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Discover Now</a>
+                                        <a href="#" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Link to Video --> </a>
                                     </div>
                                 </div>
                             </div>
@@ -523,7 +529,7 @@
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                     <h4 class="text-primary">Our Blog & News</h4>
-                    <h1 class="display-5 mb-4">Potentials</h1>
+                    <h1 class="display-5 mb-4">Potentials Development</h1>
                     <p class="mb-0">jika perlu, jika tidka perlu nanti dihapus
                 </div>
                 <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="">
@@ -595,11 +601,9 @@
         <div class="container-fluid team pb-5">
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Team</h4>
+                    <h4 class="text-primary">Project Group</h4>
                     <h1 class="display-5 mb-4">Meet Our Team</h1>
-                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
-                </div>
+                 </div>
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="team-item">
@@ -611,10 +615,8 @@
                                 <p class="mb-0">Team Leader</p>
                             </div>
                             <div class="team-icon">
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="mailto:gianijovita14@gmail.com?subject=Mail from our Website - Customer Churn Analysis Dashboard"><i class="fas fa-envelope"></i></a>
                                 <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -628,10 +630,8 @@
                                 <p class="mb-0">Member</p>
                             </div>
                             <div class="team-icon">
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="mailto:fathirmaula89@gmail.com?subject=Mail from our Website - Customer Churn Analysis Dashboard"><i class="fas fa-envelope"></i></a>
                                 <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -641,14 +641,12 @@
                                 <img src="img/team-3.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="team-title">
-                                <h4 class="mb-0">Nandya Rezky U</h4>
+                                <h4 class="mb-0">Nandya Rezky Utami</h4>
                                 <p class="mb-0">Member</p>
                             </div>
                             <div class="team-icon">
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="mailto:rezkynandaa42@gmail.com?subject=Mail from our Website - Customer Churn Analysis Dashboard"><i class="fas fa-envelope"></i></a>
                                 <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -658,14 +656,12 @@
                                 <img src="img/team-4.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="team-title">
-                                <h4 class="mb-0">A.A.G.R Bhaskara P</h4>
+                                <h4 class="mb-0">Agung Bhaskara</h4>
                                 <p class="mb-0">Member</p>
                             </div>
                             <div class="team-icon">
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="mailto:agungbhaskara35@gmail.com?subject=Mail from our Website - Customer Churn Analysis Dashboard"><i class="fas fa-envelope"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.linkedin.com/in/agungbhaskaraa/"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -683,10 +679,10 @@
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item">
                             <a href="index.html" class="p-0">
-                                <h4 class="text-white"><i class="fas fa-search-dollar me-3"></i>Stocker</h4>
+                                <h4 class="text-white"><i class="fas fa-layer-group me-3"></i>Customer Churn Analysis</h4>
                                 <!-- <img src="img/logo.png" alt="Logo"> -->
                             </a>
-                            <p class="mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                            <p class="mb-4">A project to give comprehensive understanding of customer in any companies who decide to discontinue using their services/products.</p>
                             <div class="d-flex">
                         
                             </div>
@@ -719,25 +715,19 @@
                             <h4 class="text-white mb-4">Contact Info</h4>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                                <p class="text-white mb-0">123 Street New York.USA</p>
+                                <p class="text-white mb-0">Jakarta, Indonesia</p>
                             </div>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-envelope text-primary me-3"></i>
-                                <p class="text-white mb-0">info@example.com</p>
+                                <p class="text-white mb-0">gianijovita14@gmail.com</p>
                             </div>
                             <div class="d-flex align-items-center">
                                 <i class="fa fa-phone-alt text-primary me-3"></i>
-                                <p class="text-white mb-0">(+012) 3456 7890</p>
+                                <p class="text-white mb-0">(+62)</p>
                             </div>
                             <div class="d-flex align-items-center mb-4">
                                 <i class="fab fa-firefox-browser text-primary me-3"></i>
-                                <p class="text-white mb-0">Yoursite@ex.com</p>
-                            </div>
-                            <div class="d-flex">
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <p class="text-white mb-0">dashboard-churn.vercel.app</p>
                             </div>
                         </div>
                     </div>
@@ -751,7 +741,7 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Customer Churn Analysis Dashboard - Apa Yak? Team</a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end text-body">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
