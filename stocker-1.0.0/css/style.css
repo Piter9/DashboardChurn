@@ -446,6 +446,35 @@
     transition: 0.5s;
 }
 
+.service-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Membuat semua card memiliki tinggi yang sama */
+}
+
+.service-img img {
+    max-height: 200px;
+    /* Batasi tinggi maksimum gambar */
+    width: 100%;
+    /* Lebar gambar tetap 100% */
+    object-fit: contain;
+    /* Gambar tidak terpotong dan tetap proporsional */
+}
+
+.rounded-bottom {
+    flex-grow: 1;
+    /* Membuat bagian konten berkembang untuk mengisi ruang */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Memastikan tombol berada di bagian bawah */
+}
+
+.service-item .btn {
+    align-self: flex-start;
+    /* Memastikan tombol tetap proporsional di dalam card */
+}
 .feature .feature-item:hover {
     border: 1px solid var(--bs-primary);
 }
@@ -454,6 +483,13 @@
     background: var(--bs-white);
     border-radius: 10px;
     display: inline-block;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Membuat semua card memiliki tinggi yang sama */
 }
 /*** Features End ***/
 
