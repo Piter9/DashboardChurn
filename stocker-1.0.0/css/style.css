@@ -4,13 +4,22 @@
 
 .zoom-effect {
     transition: transform 0.3s ease;
+
 }
 
 .zoom-effect:hover {
     transform: scale(1.1); /* Zoom in */
-    z-index: 1; /* Memastikan elemen di atas */
+    padding: 10px; /* Ruang ekstra di sekitar baris */
+    z-index: 0;
 }
 
+.img-center {
+    display: block;
+    margin: auto; /* Mengatur margin secara otomatis */
+}
+
+
+/* ////////////////////////////////////// */
 #spinner {
     opacity: 0;
     visibility: hidden;
