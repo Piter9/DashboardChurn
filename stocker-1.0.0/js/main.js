@@ -141,3 +141,28 @@
 
 })(jQuery);
 
+function showDiv(boxNumber) {
+    
+    event.preventDefault();
+
+    // Menyembunyikan semua box
+    const boxes = document.querySelectorAll('.wc');
+    boxes.forEach(box => {
+        box.style.display = 'none';
+    });
+
+    // Menampilkan box yang dipilih
+    const selectedBox = document.getElementById(`wc${boxNumber}`);
+    selectedBox.style.display = 'flex';
+
+
+    // Menambahkan kelas active pada tombol yang ditekan
+    buttons[boxNumber - 1].classList.add('active');// Menghapus kelas active dari semua link
+    const links = document.querySelectorAll('.nav-link');
+    links.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    // Menambahkan kelas active pada link yang ditekan
+    links[boxNumber - 1].classList.add('active');
+}

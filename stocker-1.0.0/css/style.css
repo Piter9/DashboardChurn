@@ -1,7 +1,9 @@
 
 /*** Spinner Start ***/
 /*** Spinner ***/
+.car{
 
+}
 .zoom-effect {
     transition: transform 0.3s ease;
 
@@ -9,7 +11,23 @@
 
 .zoom-effect:hover {
     transform: scale(1.1); /* Zoom in */
-    padding: 10px; /* Ruang ekstra di sekitar baris */
+    /* padding: 10px;  */
+    z-index: 0;
+}
+.button-container {
+    margin-top: 20px; /* Jarak atas */
+}
+.custom-btn {
+    border-radius: 15px; /* Sudut yang tumpul */
+    padding: 10px 20px; /* Padding untuk ukuran tombol */
+    width: 100%; /* Mengatur lebar tombol penuh */
+    text-align: center; /* Teks di tengah */
+}
+.awal:hover{
+    background-color: lightgreen;
+    border: 2px solid var(--bs-primary);
+    transform: scale(1.05); /* Zoom in */
+    /* padding: 10px;  */
     z-index: 0;
 }
 
@@ -18,7 +36,21 @@
     margin: auto; /* Mengatur margin secara otomatis */
 }
 
+.center-div {
+    display: flex;
+            justify-content: center; /* Horizontal center */
+            align-items: center; /* Vertical center */
+}
 
+.box {
+    background-color: green; /* Warna latar belakang hijau */
+    color: white; /* Warna teks putih */
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Centering secara horizontal */
+    
+    align-items: center; /* Centering secara vertikal */
+    height: 100px; /* Tinggi setiap div */
+}
 /* ////////////////////////////////////// */
 #spinner {
     opacity: 0;
