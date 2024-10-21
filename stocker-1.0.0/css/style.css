@@ -1,6 +1,16 @@
 
 /*** Spinner Start ***/
 /*** Spinner ***/
+
+.zoom-effect {
+    transition: transform 0.3s ease;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1); /* Zoom in */
+    z-index: 1; /* Memastikan elemen di atas */
+}
+
 #spinner {
     opacity: 0;
     visibility: hidden;
