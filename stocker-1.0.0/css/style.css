@@ -239,7 +239,10 @@
         /* display: none; */
         content: "Dashboard";
     }
-        
+    
+    .navbar .home{
+        display: none;
+    }
 }
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
