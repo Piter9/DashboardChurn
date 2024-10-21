@@ -49,7 +49,7 @@
     justify-content: center; /* Centering secara horizontal */
     
     align-items: center; /* Centering secara vertikal */
-    height: 100px; /* Tinggi setiap div */
+    height: 105px; /* Tinggi setiap div */
 }
 /* ////////////////////////////////////// */
 #spinner {
