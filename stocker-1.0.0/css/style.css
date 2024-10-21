@@ -573,7 +573,11 @@
     background: var(--bs-white);
     box-shadow: inset 0 0 45px rgba(0, 0, 0, .1);
     transition: 0.5s;
+   
+    
 }
+
+
 
 .blog .blog-item a {
     transition: 0.5s;
@@ -634,6 +638,7 @@
 
 .blog-carousel .owl-stage-outer {
     margin-top: 58px;
+    
 }
 
 .blog .owl-nav .owl-prev {
